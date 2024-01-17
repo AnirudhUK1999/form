@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="./css/form-styles.css">
-    <script src="../form/js/js-helper.js" defer></script>
+    <script src="../form/js/js-helper.js" defer>
+        document.querySelector('g#form-container').addEventListener('ended', function() {
+        console.log('Animation finished');
+        }, false);
+    </script>
 </head>
 <body>
-    <!-- <canvas id="canvas" width="300" height="227"></canvas> -->
+
     <div class="form-container">
         <div class="img-container">
             <img class="dummy" src="./imgs/game-gif.gif">
         </div>
         <div class="form-content">
             <div class="legend-container">
-                <legend>Sign up today for our new Arcade !</legend>
+                <legend>Sign up today and visit our Arcade !</legend>
             </div>
             <form action="">
                 <div class="fields-container">
