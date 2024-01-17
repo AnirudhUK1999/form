@@ -1,0 +1,149 @@
+/* :root{
+    height: 100%;
+} */
+
+@font-face {
+    font-family: retro-font;
+    src: url(../fonts/DotGothic16-Regular.ttf);
+}
+
+html,body{
+    margin: 0px;
+    height: 100%;
+    /* border: solid teal; */
+    font-family: retro-font;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    font-size: 1.6rem;
+}
+
+.form-container{
+    position: relative;
+    display: flex;
+    /* border: solid black; */
+    height: 100%;
+    width: 100%;
+    
+}
+
+.img-container{
+    display: flex;
+    max-width: 70vw;
+    /* border: solid blueviolet; */
+}
+
+.img-container>img{
+    width: 100%;
+    /* border: solid green; */
+}
+.form-content{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    /* position: relative; */
+    /* border: solid sienna; */
+    flex: 1;
+    background-color: rgb(255, 205, 112);
+    width: 40%;
+    /* padding: 4px; */
+}
+
+.form-content>form,.legend-container>legend{
+    /* background-color: rgb(224, 191, 149); */
+    width: 40rem;
+}
+
+.legend-container{
+    display: flex;
+    /* border: solid gold; */
+    align-content: center;
+    justify-content: center;
+    /* height: 3%; */
+}
+
+.legend-container>legend{
+    text-align: center;
+    align-content: center;
+    /* width: 100%; */
+    /* border: solid black; */
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.form-content>form{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: solid tomato; */
+    height: 60%;
+    align-self: center;
+    width: 40rem;
+    padding: 12px;
+    padding-bottom: 4px;
+    /* width: 100%; */
+    justify-content: space-evenly;
+    gap: 4px;
+    /* background-color: rgb(224, 220, 180); */
+    background-color: rgb(255, 187, 59);
+    /* position: absolute; */
+    border-radius: 6px;
+    color: black;
+    box-shadow: 8px 8px;
+}
+
+.fields-container{
+    display: block;
+    /* border: solid springgreen; */
+    /* width: 50%; */
+}
+
+label,input{
+    display: flex;
+    margin-bottom: 2px;
+}
+
+label{
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+input{
+    background-color: rgb(248, 245, 208);
+    /* font-family: retro-font; */
+    width: 15rem;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.3rem;
+    /* border: solid black; */
+    font-family: retro-font;
+}
+
+.button-container{
+    /* border: solid black; */
+    width: 20%;
+    align-items: center;
+}
+
+.button-container>button{
+    font-family: retro-font;
+    background-color: rgb(162, 162, 119);
+    border-radius: 4px;
+    /* background-color: black;
+    color: white; */
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px;
+    font-weight: bolder;
+    box-shadow: 4px 4px green;
+}
+
+.button-container>button:hover{
+    color: white;
+    background-color: black;
+}
