@@ -146,3 +146,7 @@ input{
     color: white;
     background-color: black;
 }
+
+input:invalid{
+    border: solid red 1px;
+}
